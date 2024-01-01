@@ -1,0 +1,63 @@
+job:
+  train:
+    shape: 256
+    Batch_size: 5
+    epoch: 1
+    verbose: 2
+    split_ratio: 0.15
+    learning_rate: 0.0001
+    model_save_location: ${core.data_base_path}/processed/EfficientNet_weight/
+    format: 'int'
+  test:
+    weight_path_location: ${core.data_base_path}/processed/EfficientNet_weight/
+    weight_name: '0back'
+    sample_img_path: ${core.data_base_path}/raw/imagedata/dog/petfinder_dog/53896004/
+    sample_img_name: '53896004_1.jpg'
+    embeding_save_path: ${core.data_base_path}/processed/embeding/
+#53896004_1.jpg.npy
+#jobs:
+#  - name: data-cleaning
+#    stages:
+#        - name: 'clean-base-tables'
+#          tasks:
+#            - name: 'product'
+#              params: {}
+#            - name: 'orders'
+#              params: {}
+#
+#        - name: 'clean-derivative-tables'
+#          tasks:
+#            - name: 'sales'
+#              params: {}
+#        - name: 'train-test-split'
+#          tasks:
+#            - name: 'train-test'
+#              params:
+#                target: unit_price,
+#                test_size: 0.2
+#
+#  - name: feat-engg
+#    stages:
+#        - name: 'feature-pipelines'
+#          tasks:
+#            - name: 'transform-features'
+#              params:
+#                outliers:
+#                  method: percentile
+#                  lb: 0.01
+#                  ub: 0.99
+#                  drop: True
+#
+#  - name: model-gen
+#    stages:
+#        - name: 'model-creation'
+#          tasks:
+#            - name: 'train-model'
+#              params: {}
+#
+#  - name: model-eval
+#    stages:
+#        - name: 'model-predict'
+#          tasks:
+#            - name: 'score-model'
+#              params: {}

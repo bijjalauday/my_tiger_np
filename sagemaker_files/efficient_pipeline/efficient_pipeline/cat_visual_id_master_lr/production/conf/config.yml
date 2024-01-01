@@ -1,0 +1,6 @@
+core: default
+logging: notebook
+data_catalog: local
+job_catalog: local
+efficientnet: local
+yolo: local

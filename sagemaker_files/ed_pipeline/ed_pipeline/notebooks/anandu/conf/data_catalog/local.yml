@@ -1,0 +1,25 @@
+enroll:
+  min_imgs_required: 1
+  raw_folder: ${core.data_base_path}/raw/enroll_data
+  processed_folder: ${core.data_base_path}/processed/enroll_data
+  raw_metadata_db: "{processed_folder}/enroll_metadata_db.xlsx"
+  enrolled_pet_db: "{processed_folder}/enrolled_pets_db.xlsx"
+inference:
+  raw_folder: ${core.data_base_path}/raw/inference_data
+  processed_folder: ${core.data_base_path}/processed/inference_data
+  inference_truth_label_db: "{raw_folder}/inference_labels_db.csv"
+  raw_metadata_db: "{processed_folder}/inference_metadata_db.xlsx"
+  inference_preds_db: "{processed_folder}/inference_preds_db.xlsx"
+  inference_preds_report: "{processed_folder}/inference_preds_report.xlsx"
+efficientnet:
+  raw_folder: ${core.data_base_path}/raw/train_data/efficientnet
+  processed_folder: ${core.data_base_path}/processed/train_data/efficientnet
+  artifacts_folder: ${core.artifacts_path}/efficientnet
+  raw_metadata_db: "{processed_folder}/efficientnet_train_metadata_db.xlsx"
+  model_metadata_db: "{artifacts_folder}/efficientnet_model_data_db.xlsx"
+yolo:
+  raw_folder: ${core.data_base_path}/raw/train_data/yolo
+  processed_folder: ${core.data_base_path}/processed/train_data/yolo
+  artifacts_folder: ${core.artifacts_path}/yolo
+  raw_metadata_db: "{processed_folder}/yolo_train_metadata_db.xlsx"
+  model_metadata_db: "{artifacts_folder}/yolo_model_data_db.xlsx"

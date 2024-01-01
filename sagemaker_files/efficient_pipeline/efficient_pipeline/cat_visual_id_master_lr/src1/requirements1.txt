@@ -1,0 +1,6 @@
+fsspec
+joblib
+opencv-python-headless
+tensorflow
+scikit-learn
+openpyxl 

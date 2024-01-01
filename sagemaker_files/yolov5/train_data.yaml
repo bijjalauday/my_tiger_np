@@ -1,0 +1,6 @@
+train: '../full_data/train/images/'
+val: '../full_data/val/images/'
+
+names:
+  0: cat
+  1: dog

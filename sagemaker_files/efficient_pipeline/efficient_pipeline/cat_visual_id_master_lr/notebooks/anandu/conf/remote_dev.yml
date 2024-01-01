@@ -1,0 +1,5 @@
+core: default
+logging: default
+mlflow: local
+data_catalog: housing_remote
+credentials: staging_aws

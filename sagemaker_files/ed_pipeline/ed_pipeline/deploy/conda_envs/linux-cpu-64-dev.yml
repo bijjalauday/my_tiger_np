@@ -1,0 +1,30 @@
+channels:
+- conda-forge
+- defaults
+dependencies:
+- ipython==7.20
+- great-expectations==0.13.4
+- category_encoders==2.2.2
+- fsspec==0.7.4
+- param==1.9.3
+- numpy==1.19.1
+- pandas==1.0.5
+- pip==20.2.2
+- pyyaml==5.4.1
+- python-slugify==3.0.4
+- scikit-learn==0.23.2
+- scipy==1.5.2
+- seaborn==0.10.1
+- tqdm==4.61.1
+- pip:
+  - XlsxWriter==1.3.8
+  - xlrd==2.0.1
+  - openpyxl==3.0.9
+  - opencv-python~=4.5.5
+  - tensorflow==2.6.0
+  - tensorboard==2.6.0
+  - keras==2.6.0
+  - torchvision==0.10.1
+  - torch==1.9.1
+  - imgaug==0.4.0
+

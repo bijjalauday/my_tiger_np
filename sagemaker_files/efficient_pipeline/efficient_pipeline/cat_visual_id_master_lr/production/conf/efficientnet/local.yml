@@ -1,0 +1,14 @@
+scoring:
+  scoring_version: v1.0
+  # model_path: '${core.artifacts_path}/efficientnet/v1.0/model/10_back'
+  # model_path: 'C:/Users/uday.bijjala/cat_visual_id-master/cat_visual_id-master/artifacts/efficientnet/v1.0/model/10_back'
+  model_path: "/opt/ml/processing/apt/artifacts/efficientnet/v1.0/model/10_back"
+
+training:
+  pre_trained_weights: '${core.artifacts_path}/efficientnet/{scoring_version}/model/10_back'
+  batch_size: 2
+  epoch: 1
+  verbose: 2
+  test_size: 0.15
+  learning_rate: 0.0001
+
